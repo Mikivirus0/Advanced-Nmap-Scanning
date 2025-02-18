@@ -149,13 +149,13 @@ sudo nmap -sS 49.50.79.115 --script firewall-bypass --mtu 16 -v --min-rate=200 -
 
 ## **RustScan and FScan**
 ### RustScan
-RustScan is an extremely fast port scanner that integrates with Nmap for detailed service enumeration. It helps to quickly identify open ports before performing deeper scans.
+RustScan is an extremely fast port scanner that integrates with Nmap for detailed service enumeration. It helps to quickly identify open ports before performing deeper scans. [Link](https://github.com/RustScan/RustScan)
 ```bash
 rustscan -a <target-IP> --ulimit 5000 | nmap -sV -A -p- -
 ```
 
 ### FScan
-FScan is a simple and fast scanning tool used to discover open ports and vulnerabilities. It is widely used for internal and external network reconnaissance and is particularly effective for identifying internal hosts and performing internal port scanning.
+FScan is a simple and fast scanning tool used to discover open ports and vulnerabilities. It is widely used for internal and external network reconnaissance and is particularly effective for identifying internal hosts and performing internal port scanning. [Link](https://github.com/shadow1ng/fscan)
 ```bash
 ./fscan -h <target-IP> -p 80,443,3389 -m vulscan
 ```
